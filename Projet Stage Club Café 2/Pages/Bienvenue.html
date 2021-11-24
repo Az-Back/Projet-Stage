@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<html lang="fr">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--La X-UA-Compatibleb alise META permet aux auteurs Web de choisir la version d'Internet Explorer dans laquelle la page doit être rendue -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sert a controler la mise en page mobile-->
+    <link rel="stylesheet" href="../css/Bienvenue.css">
+    <link rel="icon" href="../Images/LogoRouge.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+        <title>Bienvenue</title>
+    </head>
+<body class="backgroundall" onLoad="setTimeout('RedirectionJavascript()', 9200)"> <!--Sert a la redirection qui s'effectue aprés 9,2s depuis le chargement de la page -->
+  <div class="Charge">Veuillez patienter...</div>
+  <div class="loader"></div>
+  <div class="container">
+    <div class="progress2 progress-moved">
+      <div class="progress-bar2">
+      </div>
+    </div>
+  </div>
+  <div id="text">
+  </div>
+<p class="subtitle">Bienvenue chez Club Café!</p>
+<script type="text/javascript">
+
+// <!-- Fonction et adresse de la redirection -->
+      function RedirectionJavascript(){
+        document.location.href="Accueil.html";
+      }
+</script>
+<script type="text/javascript">
+  var i=0,text;
+  text = "Bonjour à tous !"
+
+  // <!-- Fonction écriture de texte avec un temps donné -->
+  function typing() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,375);
+
+    }
+  }
+  typing();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<html lang="fr">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--La X-UA-Compatibleb alise META permet aux auteurs Web de choisir la version d'Internet Explorer dans laquelle la page doit être rendue -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sert a controler la mise en page mobile-->
+		<link rel="StyleSheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../Images/LogoRouge.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+      <!-- Sert a récuperer/afficher les icones pour le footer -->
+        <title>Nos Plats</title>
+    </head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="Accueil.html">Accueil</a>
+  <a class="active" href="Plats.html">Nos Plats</a>
+  <a href="Boissons.html">Nos Boissons</a>
+  <a href="Desserts.html">Nos Desserts</a>
+  <a href="Services.html">Nos Services</a>
+  <a href="Contact.html">Contact</a>
+  <img class="Logo" id="Logo1" src="../Images/Banniere.png">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+   <div class="grille ParallaxG">
+       <div class="grid-item"><img class="GalerieImages" alt="Pâtes Bolognaise" src="../Images/Plat1.jpg">
+       <h3 class="TitrePlats full border">Pâtes Bolognaise</h3></div>
+       <div class="grid-item"><img class="GalerieImages" alt="Welsh" src="../Images/Plat3.jpg">
+       <h3 class="TitrePlats full border">Welsh</h3></div>
+       <div class="grid-item"><img class="GalerieImages" alt="Salade Chévre" src="../Images/Plat4.jpg">
+        <h3 class="TitrePlats full border">Salade Chévre</h3></div>
+       <div class="grid-item"><img class="GalerieImages" alt="Croque Monsieur XL" src="../Images/Plat5.jpg">
+         <h3 class="TitrePlats full border">Croque Monsieur XL</h3></div>
+       <div class="grid-item"><img class="GalerieImages" alt="Hot Dog XL" src="../Images/Plat7.jpg">
+         <h3 class="TitrePlats full border">Hot Dog XL</h3></div>
+       <div class="grid-item"><img class="GalerieImages" alt="Plateau Charcuterie" src="../Images/Plat6.jpg">
+         <h3 class="TitrePlats full border">Plateau Charcuterie</h3></div>
+   </div>
+
+   <div id="myModal" class="modal">
+      <img class="modal-content" id="img01">
+   <div id="caption"></div>
+   </div>
+
+   <div class="But"><p class="buttons"><span class="button1" onClick="myFunction1()">→ MENU ←</span></p>
+ </div>
+
+<div id="Image10">
+<img id="Menu2" class="thumb" src="../Images/MenuPlats.png">
+</div>
+
+<footer class="footer">
+  <div class="allfooter">
+    <ul class="r-footer">
+      <ul>
+        <li>
+          <h2>Social</h2>
+          <ul class="box">
+            <li><a href="https://fr-fr.facebook.com/clubcafecambrai/" target="_blank"><img class="LogoFB" src="../Images/Facebooklogo.png"></a></li>
+            <li><a href="https://www.instagram.com/clubcafe_cambrai/"target="_blank"><img class="LogoInsta" src="../Images/Instagramlogo.png"></a></li>
+            <li><a href="https://www.ubereats.com/fr/store/club-cafe/qwKTBcXoT7qnN-1J8DebUw"target="_blank"><img class="LogoUber" src="../Images/Uber.png"></a></li>
+            <li><a href="../Images/Merci1.png" onClick="setTimeout('RedirectionJavascript()', 0001)"target="_blank"><img class="LogoYoutube" src="../Images/Youtube.png"></a></li>
+            <li><img class="LogoQR" src="../Images/QRcode.png"></li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+    <div class="container-resto">
+      <div>
+        <img id="resto" src="../Images/LogoEnd.jpg" alt="Logo ClubCafé">
+        <iframe id="Carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.2718394819067!2d3.2352352152541077!3d50.174753515073384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2bb7e7baf6949%3A0xca49b1fdab62da35!2s13%20Rue%20Saint-Jacques%2C%2059400%20Cambrai!5e0!3m2!1sfr!2sfr!4v1635257094342!5m2!1sfr!2sfr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+    </div>
+    <ul class="r-footer">
+      <ul>
+        <li>
+          <h2>Nos infos</h2>
+          <ul class="box">
+            <li><a href="#" <i class="fas fa-map-marker-alt"></i></a> &nbsp;Adresse: 13 rue Saint Jacques 59400 Cambrai</li>
+            <li><a href="#" class="fas fa-utensils"></a> &nbsp;Plats et boissons à emporter</li>
+            <li><a href="#" class="fas fa-phone"></a> &nbsp;Tel: 09.63.53.10.14</li>
+            <li><a href="#" <i class="fas fa-clock"></i></a></li>
+              <li>&nbsp;Lundi 8h-19h<br></li>
+             <li>&nbsp;Mardi 8h-19h<br></li>
+               <li>&nbsp;Mercredi 8h-19h<br></li>
+               <li>&nbsp;Jeudi 8h-19h<br></li>
+               <li>&nbsp;Vendredi 8h-19h<br></li>
+               <li>&nbsp;Samedi 8h-19h<br></li>
+            </li>
+          </ul>
+        </ul>
+  </div>
+  <div class="b-footer">
+    <p>
+      All rights reserved by ©ClubCafé 2021
+    </p>
+  <p>
+    <a class="b-footer back" href="#myTopnav">&#9755; Retour en haut &#9754;</a>
+  </p>
+  </div>
+</footer>
+<script src="../js/button.js"></script>
+<script src="../js/modal.js"></script>
+<script src="../js/Merci.js"></script>
+<script src="../js/Nav.js"></script>
+</body>
+</html>

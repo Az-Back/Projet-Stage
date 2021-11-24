@@ -1,0 +1,268 @@
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding-top: 10px;
+color: #fff;
+background-color: #434343;
+bottom: 0;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+
+h2 {
+font-weight: 400;
+font-size: 30px;
+color: #45b175;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+width: 50%;
+}
+
+.r-footer li {
+  padding-top: 5px;
+}
+
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+text-align: center;
+}
+
+.box a {
+color: #FFFFFF;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #45b175;
+
+}
+.allfooter
+{
+  column-count: 3;
+  display: inline-flex;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}
+
+#resto {
+  width: 30%;
+  margin-left: 20px;
+}
+
+#Carte {
+  margin-left: 100px;
+}
+
+.container-resto {
+max-width: 700px;
+margin: auto;
+padding: auto;
+}
+
+.LogoFB {
+  height: 15%;
+  width: 25%;
+}
+
+.LogoInsta {
+  height: 10%;
+  width: 20%;
+}
+
+.LogoUber {
+  margin-top: 5px;
+  height: 32%;
+  width: 32%;
+}
+
+.LogoYoutube {
+  height: 25%;
+  width: 25%;
+}
+
+.LogoFB:hover, .LogoInsta:hover, .LogoUber:hover, .back:hover, .LogoYoutube:hover {
+  border: 1px solid black;
+  border-image: linear-gradient(180deg, #e54c46, #45b175) 1;
+  animation: color0 2s linear infinite;
+}
+
+@keyframes color0 {
+  0% {
+    border-image: linear-gradient(180deg, #e54c46, #45b175) 1;
+  }
+
+  25% {
+    border: 1px solid black;
+    border-image: linear-gradient(180deg, cyan, #a200ff) 1;
+  }
+
+  50% {
+    border: 1px solid black;
+    border-image: linear-gradient(180deg, rgb(255, 0, 0), #ffffff) 1;
+  }
+
+  75% {
+    border: 1px solid black;
+    border-image: linear-gradient(180deg, rgb(255, 0, 191), #000000) 1;
+  }
+
+  100% {
+    border: 1px solid black;
+    border-image: linear-gradient(180deg, #e54c46, #45b175) 1;
+  }
+}
+
+.LogoQR {
+  margin-top: 10px;
+  width: 60%;
+  height: 45%;
+}
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .allfooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features {
+    display: none;
+  }
+
+  #Carte {
+    margin-left: 0px;
+  }
+
+  #resto {
+    display: none;
+  }
+
+  .r-footer > * {
+    flex: 1;
+  }
+
+  .r-footer {
+    flex: 2 0px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .box {
+    font-size: 120%;
+  }
+
+  .LogoFB {
+    height: 50%;
+    width: 30%;
+  }
+
+  .LogoInsta {
+    height: 50%;
+    width: 30%;
+  }
+
+  .LogoUber {
+    margin-top: 5px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .LogoQR {
+    margin-top: 10px;
+    width: 60%;
+    height: 45%;
+  }
+
+  .LogoYoutube {
+    height: 30%;
+    width: 30%;
+  }
+  }
+
+@media screen and (min-width: 1400px) {
+  .LogoFB {
+    height: 10%;
+    width: 20%;
+  }
+
+  .LogoInsta {
+    height: 10%;
+    width: 20%;
+  }
+
+  .LogoUber {
+    margin-top: 5px;
+    height: 10%;
+    width: 20%;
+  }
+
+  .LogoQR {
+    margin-top: 10px;
+    width: 30%;
+    height: 15%;
+  }
+
+  .LogoYoutube {
+    height: 10%;
+    width: 20%;
+  }
+
+  .box{
+    font-size: 30px;
+  }
+  }
